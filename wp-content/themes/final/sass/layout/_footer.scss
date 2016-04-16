@@ -1,38 +1,88 @@
 .site-footer {
+  .menu{
+    li{
+      &:before{
+        float: left;
+        padding-top: 10px;
+        display: inline-block;
+        color: #ffaf36;
+        font-size: 10px;
+        content: '\f0da';
+        font-family: FontAwesome, sans-serif;
+
+      }
+    }
+  }
+  .main-navigation{
+    clear: none!important;
+  }
+  p.site-title{
+    margin-top: 120px;
+    text-align: center;
+    a {
+      color: #7b7b7c;
+      font-size: 20px;
+    }
+  }
+  background-color: #2a2b2c;;
   color: $footer-font-color;
   border-top: 1px solid grey;
-  font-family: 'nova',sans-serif;
-  font-size: (12/16)*1rem;
+  text-transform: uppercase;
+  color: #7b7b7c;
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
   font-weight: 600;
-  .bottom-nav{
-    padding: 30px 0;
-    display: inline-block;
-    li{
-      font-size: 14px;
-      display: inline-block;
+  .formbot {
+margin-top: 100px;
+    p {
+      width: 49%;
 
-      a{
-        padding: 30px 15px;
-        color: #555;
-        &:hover{
-          color: $link_hover-color;
-        }
+      input {
+        overflow: hidden;
+        width: 103%;
+        border: 1px solid #373839;
+        border-radius: 0;
+        background-color: #2a2b2c;
+      }
+      textarea {
+        width: 205%;
+        border: 1px solid #373839;
+        height: 100px;
+        border-radius: 0;
+        background-color: #2a2b2c;
+      }
+    }
+    p:last-child {
+      display: block;
+    }
+  }
+  .bottom-nav {
+margin-top: 100px;
+    display: inline-block;
+    li {
+      font-size: 14px;
+      display: block;
+      float: none;
+
+      a {
+        width: 50%;
+        text-align: left;
+        padding: 10px 10px;
+        text-transform: uppercase;
+        color: #7b7b7c;
+        font-family: OpenSans, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        border-bottom: 1px solid #373839;;
       }
     }
   }
-  .social-icon{
-    padding: 30px 15px;
+  .social-icon {
+    padding: 10px;
   }
-  .copyright {
-    font-size: 14px;
-    padding: 30px 15px;
-    color: #555;
-    a{
-      color: #555;
-      &:hover {
-      color: $link_hover-color;
-      }
-    }
-  }
+
+.logobot{
+  text-align: center;
+}
 
 }

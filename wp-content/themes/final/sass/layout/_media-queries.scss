@@ -1,5 +1,49 @@
 @import '../utils/_variables';
 
+@media screen and (min-width: $md-width) {
+  .main-navigation {
+    margin-top: 2px;
+
+    float: left;
+    .cross {
+      display: none;
+    }
+    .hamburger {
+      display: none;
+    }
+    .menu-menu-1-container {
+      position: static;
+      background: transparent;
+
+      ul {
+        display: block !important;
+        text-align: right;
+        &:before,
+        &:after {
+          content: '';
+          display: table;
+        }
+        &:after {
+          clear: both;
+        }
+        li {
+          display: inline-block;
+          border-bottom: none;
+          background-color: transparent;
+          a {
+            padding: 30px 20px;
+          }
+          &:hover {
+            background-color: transparent;
+          }
+          a {
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+  }}
 @media screen and (min-width: $min-width) and (max-width: $sm-width - 1) {
   .main-section {
     .preview-work {
@@ -72,43 +116,44 @@
     .hamburger {
       display: none !important;
     }
-    .top-nav{
+    .top-nav {
       .menu-primary-menu-container {
-      width: 55%;
-      position: static;
-      background: transparent;
-      ul {
-        display: block !important;
-        float: right;
-        &:before,
-        &:after {
-          content: '';
-          display: table;
-        }
-        &:after {
-          clear: both;
-        }
-        li {
-          float: left;
-          border-bottom: none;
-          a {
-            padding: 35px 10px;
+        width: 55%;
+        position: static;
+        background: transparent;
+        ul {
+          display: block !important;
+          float: right;
+          &:before,
+          &:after {
+            content: '';
+            display: table;
           }
-          &:hover {
-            background-color: transparent;
+          &:after {
+            clear: both;
           }
-          a {
+          li {
+            float: left;
+            border-bottom: none;
+            a {
+              padding: 35px 10px;
+            }
             &:hover {
+              background-color: transparent;
+            }
+            a {
+              &:hover {
+              }
             }
           }
         }
       }
-    }
 
+    }
   }
-  }
-  .bottom-nav{
+  .bottom-nav {
     text-align: left;
-  };
+  }
+;
 
 }
